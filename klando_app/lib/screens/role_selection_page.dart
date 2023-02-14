@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:klando_app/screens/create_account_page.dart';
 import 'package:klando_app/widgets/button_widget.dart';
 
 class RoleSelectionPage extends StatefulWidget {
@@ -44,7 +45,14 @@ class _RoleSelectionPageState extends State<RoleSelectionPage> {
           CustomButton(
             buttonText: "Passenger",
             buttonColor: const Color(0xff1363DF),
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => CreateAccountPage(),
+                ),
+              );
+            },
           ),
         ],
       ),
