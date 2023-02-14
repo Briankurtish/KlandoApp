@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:klando_app/screens/otp_screen.dart';
 import 'package:klando_app/screens/role_selection_page.dart';
 
 class CreateLoadingWidget extends StatelessWidget {
@@ -12,7 +13,7 @@ class CreateLoadingWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     Future.delayed(Duration(seconds: 5), () {
       Navigator.of(context).pushReplacement(MaterialPageRoute(
-        builder: (BuildContext context) => RoleSelectionPage(),
+        builder: (BuildContext context) => OTP_screen(),
       ));
     });
     return Scaffold(
