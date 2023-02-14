@@ -14,13 +14,25 @@ class _CreateAccountPageState extends State<CreateAccountPage> {
       body: Column(
         children: [
           const Padding(
-            padding: EdgeInsets.only(top: 150),
+            padding: EdgeInsets.only(top: 50),
             child: Center(
               child: Text(
-                "Are you a Driver or a Client?",
+                "Create Account",
                 style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
               ),
             ),
+          ),
+          const Center(
+            child: Padding(
+              padding: EdgeInsets.all(20.0),
+              child: Text(
+                "Follow the steps below to successfully create your account and get taxis on the GO",
+                textAlign: TextAlign.center,
+              ),
+            ),
+          ),
+          Column(
+            children: const [],
           ),
         ],
       ),
